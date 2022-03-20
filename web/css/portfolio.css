@@ -1,0 +1,71 @@
+.text {
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-title {
+    padding: 0;
+    margin: 0;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;;
+    font-weight: 300;
+    font-size: 18px;
+    color: deepskyblue;
+}
+
+/*skills*/
+
+.skills {
+    max-width: 68.75rem;
+    text-align: start;
+    margin: 2.5rem auto auto;
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+    alignment: center;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon-card {
+    background-color: #2e343a;
+    border-radius: 11px;
+    display: inline-block;
+    box-shadow: #1c1d1f 0 4px 10px 0;
+    padding: 5px;
+    margin: 20px;
+}
+
+.progress-segment {
+    display: flex;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.item {
+    width: 100%;
+    background-color: lightgray;
+    margin-right: 3px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.active-segment {
+    background-color: deepskyblue;
+}
+
+.project-banner {
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+}
