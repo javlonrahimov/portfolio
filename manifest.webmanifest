@@ -1,0 +1,22 @@
+{
+  "short_name": "Portfolio",
+  "name": "Portfolio",
+  "description": "Esoteric",
+  "icons": [
+    {
+      "src": "https://storage.googleapis.com/murlok-github/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://storage.googleapis.com/murlok-github/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "/portfolio/",
+  "start_url": "/portfolio/",
+  "background_color": "#2e343a",
+  "theme_color": "#2e343a",
+  "display": "standalone"
+}

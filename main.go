@@ -100,6 +100,7 @@ func main() {
 			`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1013306768105236" crossorigin="anonymous"></script>`,
 			analytics.GoogleAnalyticsHeader("G-SW4FQEM9VM"),
 		},
+		Resources: app.GitHubPages("portfolio"),
 	}
 
 	switch cli.Load() {
@@ -136,7 +137,7 @@ func runLocal(ctx context.Context, h *app.Handler, opts localOptions) {
 }
 
 func generateGitHubPages(ctx context.Context, h *app.Handler, opts githubOptions) {
-	if err := app.GenerateStaticWebsite(opts.Output, h); err != nil {
+	if err := app.GenerateStaticWebsite(".", h); err != nil {
 		panic(err)
 	}
 }
