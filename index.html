@@ -8,7 +8,7 @@
 <meta name="keywords" content="go-app, go, golang, app, pwa">
 <meta name="theme-color" content="#2e343a">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
-<meta property="og:url" content="http://127.0.0.1:42111/">
+<meta property="og:url" content="http://127.0.0.1:43173/">
 <meta property="og:title" content="Esoteric">
 <meta property="og:description" content="Esoteric">
 <meta property="og:type" content="website">
@@ -18,11 +18,11 @@ Esoteric
 </title>
 <link rel="icon" type="image/png" href="https://storage.googleapis.com/murlok-github/icon-192.png">
 <link rel="apple-touch-icon" href="https://storage.googleapis.com/murlok-github/icon-192.png">
-<link href="/portfolio/manifest.webmanifest" rel="manifest">
+<link rel="manifest" href="/portfolio/manifest.webmanifest">
 <link type="text/css" rel="stylesheet" href="/portfolio/app.css">
 <script defer="true" src="/portfolio/wasm_exec.js"></script>
 <script defer="true" src="/portfolio/app.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" type="text/css">
 <link type="text/css" rel="stylesheet" href="/portfolio/web/css/prism.css">
 <link type="text/css" rel="stylesheet" href="/portfolio/web/css/docs.css">
 <link type="text/css" rel="stylesheet" href="/portfolio/web/css/portfolio.css">
@@ -41,14 +41,14 @@ Esoteric
 <body>
 <div>
 <aside id="app-wasm-loader" class="goapp-app-info">
-<img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" src="https://storage.googleapis.com/murlok-github/icon-192.png">
-<p id="app-wasm-loader-label" class="goapp-label">
+<img src="https://storage.googleapis.com/murlok-github/icon-192.png" id="app-wasm-loader-icon" class="goapp-logo goapp-spin">
+<p class="goapp-label" id="app-wasm-loader-label">
 Wait a minute
 </p>
 </aside>
 <div id="app-pre-render">
 <div data-goapp-ui="shell" id class="fill background">
-<div id="goapp-shell-c0373ad2-e73f-4048-9d05-caf479a00859" style="display:flex;width:100%;height:100%;overflow:hidden;">
+<div id="goapp-shell-63f6770d-3973-4ba4-894f-6b2e2f87949a" style="display:flex;width:100%;height:100%;overflow:hidden;">
 <div style="position:relative;display:block;flex-shrink:0;flex-basis:230px;overflow:hidden;">
 <div data-goapp-ui="scroll" id class="menu fill">
 <div style="width:100%;height:calc(100% - 24px);padding:12px 0;">
@@ -64,24 +64,24 @@ Javlon
 <div style="width:calc(100% - 24px);height:calc(100% - 124px);padding:0 12px;overflow-x:hidden;overflow-y:scroll;">
 <nav>
 <div class="separator"></div>
-<a id class="link heading fit unselectable" title href="/">
-<div id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;" data-goapp="Stack">
+<a title href="/" id class="link heading fit unselectable">
+<div data-goapp="Stack" id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;">
 <div>
 Home
 </div>
 </div>
 </a>
 <div class="separator"></div>
-<a href="/portfolio" id class="link heading fit unselectable" title>
-<div class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;" data-goapp="Stack" id>
+<a id class="link heading fit unselectable" title href="/my_portfolio">
+<div data-goapp="Stack" id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;">
 <div>
 Portfolio
 </div>
 </div>
 </a>
 <div class="separator"></div>
-<a id class="link heading fit unselectable" title href="/blog">
-<div data-goapp="Stack" id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;">
+<a class="link heading fit unselectable" title href="/blog" id>
+<div id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;" data-goapp="Stack">
 <div>
 Blog
 </div>
@@ -89,8 +89,8 @@ Blog
 </a>
 <div class="separator"></div>
 <div class="separator"></div>
-<a title href="/contact" id class="link heading fit unselectable">
-<div style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;" data-goapp="Stack" id class>
+<a id class="link heading fit unselectable" title href="/contact">
+<div class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;" data-goapp="Stack" id>
 <div>
 Contact
 </div>
@@ -117,14 +117,14 @@ Go-app
 <div style="width:100%;height:calc(100% - 24px);padding:12px 0;">
 <div style="width:calc(100% - 24px);padding:0 12px;height:62px;">
 <nav class="fill">
-<div style="display:flex;justify-content:flex-end;align-items:center;" data-goapp="Stack" id class="fill"></div>
+<div data-goapp="Stack" id class="fill" style="display:flex;justify-content:flex-end;align-items:center;"></div>
 </nav>
 </div>
 <div style="width:calc(100% - 24px);height:calc(100% - 62px);padding:0 12px;overflow-x:hidden;overflow-y:scroll;">
 <main>
 <article>
 <header id="page-top" class="page-title center">
-<div data-goapp="Stack" id class style="display:flex;justify-content:center;align-items:center;">
+<div id class style="display:flex;justify-content:center;align-items:center;" data-goapp="Stack">
 <h1>
 Home
 </h1>
@@ -186,7 +186,7 @@ Mobile
 </div>
 </div>
 <div class="icon-card">
-<img class="icon" src="/portfolio/web/images/gradle-plain.svg" alt>
+<img alt class="icon" src="/portfolio/web/images/gradle-plain.svg">
 <div class="progress-segment">
 <div class="item active-segment"></div>
 <div class="item active-segment"></div>
@@ -219,7 +219,7 @@ Mobile
 Backend
 </h3>
 <div class="icon-card">
-<img src="/portfolio/web/images/go-original-wordmark.svg" alt class="icon">
+<img class="icon" src="/portfolio/web/images/go-original-wordmark.svg" alt>
 <div class="progress-segment">
 <div class="item active-segment"></div>
 <div class="item active-segment"></div>
@@ -255,7 +255,7 @@ Backend
 </div>
 </div>
 <div class="icon-card">
-<img class="icon" src="/portfolio/web/images/docker-plain.svg" alt>
+<img src="/portfolio/web/images/docker-plain.svg" alt class="icon">
 <div class="progress-segment">
 <div class="item active-segment"></div>
 <div class="item active-segment"></div>
@@ -264,7 +264,7 @@ Backend
 </div>
 </div>
 <div class="icon-card">
-<img src="/portfolio/web/images/circleci-plain.svg" alt class="icon">
+<img class="icon" src="/portfolio/web/images/circleci-plain.svg" alt>
 <div class="progress-segment">
 <div class="item active-segment"></div>
 <div class="item"></div>
@@ -364,7 +364,7 @@ This was my first ever job where I have improved my programming skills and devel
 <br>
 <br>
 <div class="container right">
-<a style="font-size:1.2em;" href="https://tuit.uz">
+<a href="https://tuit.uz" style="font-size:1.2em;">
 TUIT
 </a>
 <ul>

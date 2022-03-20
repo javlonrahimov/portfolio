@@ -8,9 +8,9 @@
 <meta name="keywords" content="go-app, go, golang, app, pwa">
 <meta name="theme-color" content="#2e343a">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
-<meta property="og:url" content="http://127.0.0.1:42111/contact">
+<meta property="og:url" content="http://127.0.0.1:43173/contact">
 <meta property="og:title" content="Esoteric">
-<meta property="og:description" content="Esoteric">
+<meta content="Esoteric" property="og:description">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://go-app.dev/web/images/go-app.pn">
 <title>
@@ -19,12 +19,12 @@ Esoteric
 <link rel="icon" type="image/png" href="https://storage.googleapis.com/murlok-github/icon-192.png">
 <link rel="apple-touch-icon" href="https://storage.googleapis.com/murlok-github/icon-192.png">
 <link rel="manifest" href="/portfolio/manifest.webmanifest">
-<link type="text/css" rel="stylesheet" href="/portfolio/app.css">
-<script src="/portfolio/wasm_exec.js" defer="true"></script>
+<link rel="stylesheet" href="/portfolio/app.css" type="text/css">
+<script defer="true" src="/portfolio/wasm_exec.js"></script>
 <script defer="true" src="/portfolio/app.js"></script>
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
 <link type="text/css" rel="stylesheet" href="/portfolio/web/css/prism.css">
-<link rel="stylesheet" href="/portfolio/web/css/docs.css" type="text/css">
+<link type="text/css" rel="stylesheet" href="/portfolio/web/css/docs.css">
 <link type="text/css" rel="stylesheet" href="/portfolio/web/css/portfolio.css">
 <script defer="true" src="/portfolio/web/js/prism.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1013306768105236" crossorigin="anonymous"></script>
@@ -42,20 +42,20 @@ Esoteric
 <div>
 <aside id="app-wasm-loader" class="goapp-app-info">
 <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" src="https://storage.googleapis.com/murlok-github/icon-192.png">
-<p class="goapp-label" id="app-wasm-loader-label">
+<p id="app-wasm-loader-label" class="goapp-label">
 Wait a minute
 </p>
 </aside>
 <div id="app-pre-render">
 <div data-goapp-ui="shell" id class="fill background">
-<div id="goapp-shell-924f7bea-af92-4a81-89de-c2beddf8b7fc" style="display:flex;width:100%;height:100%;overflow:hidden;">
+<div id="goapp-shell-53228837-639c-4184-906a-293298f7be24" style="display:flex;width:100%;height:100%;overflow:hidden;">
 <div style="position:relative;display:block;flex-shrink:0;flex-basis:230px;overflow:hidden;">
 <div data-goapp-ui="scroll" id class="menu fill">
 <div style="width:100%;height:calc(100% - 24px);padding:12px 0;">
 <div style="width:calc(100% - 24px);padding:0 12px;height:62px;">
 <div data-goapp="Stack" id class="fill" style="display:flex;justify-content:flex-start;align-items:center;">
 <header>
-<a href="/" class="heading app-title">
+<a class="heading app-title" href="/">
 Javlon
 </a>
 </header>
@@ -64,7 +64,7 @@ Javlon
 <div style="width:calc(100% - 24px);height:calc(100% - 124px);padding:0 12px;overflow-x:hidden;overflow-y:scroll;">
 <nav>
 <div class="separator"></div>
-<a id class="link heading fit unselectable" title href="/">
+<a title href="/" id class="link heading fit unselectable">
 <div data-goapp="Stack" id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;">
 <div>
 Home
@@ -72,7 +72,7 @@ Home
 </div>
 </a>
 <div class="separator"></div>
-<a id class="link heading fit unselectable" title href="/portfolio">
+<a id class="link heading fit unselectable" title href="/my_portfolio">
 <div data-goapp="Stack" id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;">
 <div>
 Portfolio
@@ -80,8 +80,8 @@ Portfolio
 </div>
 </a>
 <div class="separator"></div>
-<a href="/blog" id class="link heading fit unselectable" title>
-<div class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;" data-goapp="Stack" id>
+<a id class="link heading fit unselectable" title href="/blog">
+<div data-goapp="Stack" id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;">
 <div>
 Blog
 </div>
@@ -89,8 +89,8 @@ Blog
 </a>
 <div class="separator"></div>
 <div class="separator"></div>
-<a title href="/contact" id class="link heading fit unselectable">
-<div data-goapp="Stack" id class style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;">
+<a id class="link heading fit unselectable" title href="/contact">
+<div style="display:flex;justify-content:flex-start;align-items:center;padding:3px 0;" data-goapp="Stack" id class>
 <div>
 Contact
 </div>
@@ -100,7 +100,7 @@ Contact
 </div>
 <div style="width:calc(100% - 24px);padding:0 12px;height:62px;">
 <p>
-<div style="display:flex;justify-content:flex-start;align-items:center;text-align:center;" data-goapp="Stack" id class="fill">
+<div data-goapp="Stack" id class="fill" style="display:flex;justify-content:flex-start;align-items:center;text-align:center;">
 Build with
 <div style="width:8px;"></div>
 <a href="https://github.com/maxence-charriere/go-app">
@@ -124,7 +124,7 @@ Go-app
 <main>
 <article>
 <header id="page-top" class="page-title center">
-<div id class style="display:flex;justify-content:center;align-items:center;" data-goapp="Stack">
+<div class style="display:flex;justify-content:center;align-items:center;" data-goapp="Stack" id>
 <h1>
 Contact
 </h1>
@@ -132,7 +132,7 @@ Contact
 </header>
 <div class="separator"></div>
 <div data-goapp-ui="flow" id class>
-<div id="goapp-flow-a468ce52-7aa9-47a8-81f5-1f83f1e8bb0b" style="display:flex;flex-wrap:wrap;width:100%;max-width:100%;">
+<div id="goapp-flow-fb31f813-f0bb-4929-8cec-f6d66fbdafec" style="display:flex;flex-wrap:wrap;width:100%;max-width:100%;">
 <div style="position:relative;flex-shrink:0;flex-basis:272.000000px;max-width:272.000000px;margin-top:0;margin-left:0;">
 <div class="skills-wrapper">
 <div class="first-set">
@@ -140,14 +140,14 @@ Contact
 <div class="icon-card">
 <a href="mailto: javlonrahimov1212@gmail.com">
 <img class="icon" src="/portfolio/web/images/at-symbol.svg" alt>
-<div class="text" style="text-align:center;">
+<div style="text-align:center;" class="text">
 Email
 </div>
 </a>
 </div>
 <div class="icon-card">
 <a href="https://www.linkedin.com/in/javlon-rahimov-4b06b6207/">
-<img class="icon" src="/portfolio/web/images/linkedin.svg" alt>
+<img alt class="icon" src="/portfolio/web/images/linkedin.svg">
 <div class="text" style="text-align:center;">
 LinkedIn
 </div>
@@ -164,7 +164,7 @@ Twitter
 <div class="icon-card">
 <a href="https://stackoverflow.com/users/12153321/javlon">
 <img src="/portfolio/web/images/stack-overflow.svg" alt class="icon">
-<div style="text-align:center;" class="text">
+<div class="text" style="text-align:center;">
 Stack
 </div>
 </a>
@@ -179,7 +179,7 @@ GitHub
 </div>
 <div class="icon-card">
 <a href="https://leetcode.com/javlon1212/">
-<img src="/portfolio/web/images/leetcode.svg" alt class="icon">
+<img class="icon" src="/portfolio/web/images/leetcode.svg" alt>
 <div class="text" style="text-align:center;">
 Leetcode
 </div>
