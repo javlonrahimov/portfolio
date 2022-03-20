@@ -44,7 +44,7 @@ func main() {
 	analytics.Add(analytics.NewGoogleAnalytics())
 
 	app.Route("/", newHomePage())
-	app.Route("/portfolio", newPortfolioPage())
+	app.Route("/my_portfolio", newPortfolioPage())
 	app.Route("/blog", newBlogPage())
 	app.Route("/contact", newContactPage())
 

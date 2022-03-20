@@ -70,8 +70,8 @@ func (m *menu) Render() app.UI {
 				ui.Link().
 					Class(linkClass).
 					Label("Portfolio").
-					Href("/portfolio").
-					Class(isFocus("/portfolio")),
+					Href("/my_portfolio").
+					Class(isFocus("/my_portfolio")),
 				app.Div().Class("separator"),
 				ui.Link().
 					Class(linkClass).
