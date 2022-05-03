@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+	"time"
+
 	"github.com/maxence-charriere/go-app/v9/pkg/app"
 )
 
@@ -15,7 +18,7 @@ func timeline() app.HTMLDiv {
 				Href("https://www.linkedin.com/company/unical-solutions/"),
 			app.Ul().Body(
 				app.Li().Body(
-					app.Div().Class("date").Text("Aug 2021 - Present ∘ 8 month"),
+					app.Div().Class("date").Text(fmt.Sprintf("Aug 2021 - Present ∘ %d month", monthYearDiff(time.Date(2021, time.Month(8), 0, 0, 0, 0, 0, time.UTC), time.Now()))),
 				),
 				app.Li().Body(
 					app.P().Class("text").Text("Android developer"),
@@ -64,4 +67,18 @@ func timeline() app.HTMLDiv {
 			),
 		),
 	)
+}
+
+func monthYearDiff(a, b time.Time) (months int) {
+    m := a.Month()
+    for a.Before(b) {
+        a = a.Add(time.Hour * 24)
+        m2 := a.Month()
+        if m2 != m {
+            months++
+        }
+        m = m2
+    }
+    months = months % 12
+    return
 }
