@@ -97,7 +97,7 @@ var contacts = []Contact{
 	},
 	{
 		title: "Resume",
-		link:  "web/documents/resume.pdf",
+		link:  "https://github.com/javlonrahimov/portfolio/blob/main/web/documents/resume.pdf",
 	},
 }
 
