@@ -88,12 +88,16 @@ var contacts = []Contact{
 		link:  "https://twitter.com/Javlon1212",
 	},
 	{
-		title: "Stackoverflow",
+		title: "Stack",
 		link:  "https://stackoverflow.com/users/12153321/javlon",
 	},
 	{
 		title: "Github",
 		link:  "https://github.com/javlonrahimov",
+	},
+	{
+		title: "Resume",
+		link:  "web/documents/resume.pdf",
 	},
 }
 
@@ -158,7 +162,7 @@ func (p *homePage) Render() app.UI {
 			app.Br(),
 			ui.Flow().
 				StretchItems().
-				ItemWidth(150).
+				ItemWidth(130).
 				Content(
 					app.Range(conUI).Slice(func(i int) app.UI {
 						return conUI[i]
