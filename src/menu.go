@@ -73,18 +73,6 @@ func (m *menu) Render() app.UI {
 					Label("Portfolio").
 					Href("/portfolio").
 					Class(isFocus("/portfolio")),
-				ui.Link().
-					Class(linkClass).
-					Icon(resumeSVG).
-					Label("Resume").
-					Href("/resume").
-					Class(isFocus("/resume")),
-				ui.Link().
-					Class(linkClass).
-					Icon(connectSVG).
-					Label("Contact").
-					Href("/contact").
-					Class(isFocus("/contact")),
 			),
 		).
 		FooterHeight(footerHeight).
