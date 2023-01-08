@@ -162,7 +162,6 @@ func (p *homePage) Render() app.UI {
 			app.Br(),
 			ui.Flow().
 				StretchItems().
-				ItemWidth(130).
 				Content(
 					app.Range(conUI).Slice(func(i int) app.UI {
 						return conUI[i]
