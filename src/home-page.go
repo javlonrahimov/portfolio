@@ -84,8 +84,8 @@ var contacts = []Contact{
 		link:  "https://www.linkedin.com/in/javlon-rahimov-4b06b6207/",
 	},
 	{
-		title: "Twitter",
-		link:  "https://twitter.com/Javlon1212",
+		title: "Leetcode",
+		link:  "https://leetcode.com/javlon1212/",
 	},
 	{
 		title: "Stack",
